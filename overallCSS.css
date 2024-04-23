@@ -1,0 +1,303 @@
+/* 
+    Created on : Mar 11, 2024
+    Author     : Jess
+
+Color palette (hex codes)):
+Red             EE1B2E
+Light Red       F6967E
+Light orange    ffded4
+Grey            cccccc
+Light grey      e6e6e6
+White           FFFFFF
+*/
+
+/* Responsive layout - 800px*/
+@media screen and (max-width: 800px) {
+    *{
+        font-size: 16px;
+    }
+    div.section-row {
+        flex-direction: column;
+    }
+    
+    .flex-column, .flex-row,.flex-item, .flex-box {
+        width: 100%;
+        padding: 0;
+        font-size: 15px;
+    }
+
+    form {
+    width: 60vw;
+    min-width: 200px;
+    }
+
+    .tallImg {
+        visibility: hidden;
+        max-width: 1px;
+    }
+}
+
+/* Responsive layout - 600px*/
+@media screen and (max-width: 600px) {
+    .flex-column, .flex-row,.flex-item, .flex-box {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contentImg {
+        min-width: 50px;
+    }
+
+}
+
+/* Responsive layout - 400px*/
+@media screen and (max-width: 400px) {
+    * {
+        font-size: 14px;
+    }
+    .flex-column, .flex-row,.flex-item, .flex-box {
+        float: none;
+        width: 100%;
+    }
+}
+
+* {
+    border: none;
+    font-family: "Baskerville Old Face", "Bodini MT", serif;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 18px;
+    margin: 0;
+    border-right: 2.5vw solid #EE1B2E;
+    border-left: 2.5vw solid #EE1B2E;
+}
+
+
+section {
+    min-height: 65vh;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Georgia", "Times New Roman", serif;
+    margin: 0px;
+}
+
+h2 {
+    font-family: "Georgia", "Times New Roman", serif;
+    margin: 5px;
+}
+
+h3 {
+    font-family: "Georgia", "Times New Roman", serif;
+    margin: 0px;
+}
+
+h4 {
+    font-family: "Georgia", "Times New Roman", serif;
+    margin: 0px;
+}
+
+div {
+    min-width: 60px;
+}
+
+#line {
+    background-color: #ffded4;
+    margin: 0;
+    padding: 8px;
+}
+
+.CTA {
+    font-size: 1.2em;
+    padding: 2px 6px;
+    margin: 0px;
+    width: 4em;
+    height: 35px;
+    background-color: #EE1B2E;
+    color: white;
+    border: 3px solid #F6967E;
+    border-radius: 2.7px;
+}
+
+.flex-column {
+    flex-grow: 5;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: left;
+    align-content: space-between;
+    padding: 0 15px 0 15px;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 15px 0 15px;
+}
+
+.flex-item {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: left;
+    align-content: space-around;
+    padding: 10px;
+}
+
+.flex-box {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-column {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.section-row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 15px 0 15px;
+}
+
+.section-side {
+    display: block;
+    align-self: stretch;
+    padding: 10px;
+    margin: 0 20vw;
+}
+
+.section-img {
+    align-self: center;
+}
+
+.section-item {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 30px;
+}
+
+form {
+    font-size: 1.4em;
+    border: none;
+    padding: 15px;
+    text-align: left !important;
+}
+
+#login {
+    font-size: 1.4em;
+    border: none;
+    padding: 15px;
+    text-align: left !important;
+}
+
+
+/* W3School - CSS forms. Input and Submit boxes. Next 3 features
+ * 7th March 2024. 
+ * URL: https://www.w3schools.com/css/css_form.asp
+*/
+input[type=text], input[type=password], select {
+    background-color: #e6e6e6;
+    width: 35vw;
+    min-width: 250px;
+    padding: 4px 8px;
+    margin: 4px 0;
+    display: block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    max-width: 80px;
+    background-color: #F6967E;
+    color: white;
+    padding: 4px 8px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: #ffded4;
+    cursor: pointer;
+}
+
+textarea {
+    width: 35vw;
+    min-width: 250px;
+    height: 250px;
+    padding: 4px 8px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #e6e6e6;
+    resize: vertical;
+}
+
+
+button {
+    padding: 2px 6px;
+    margin: 15px 0px 15px 30px;
+    width: 4em;
+    height: 1.8em;
+    background-color: #EE1B2E;
+    color: white;
+    border: 3px solid #F6967E;
+    border-radius: 12%;
+}
+
+button:hover {
+    background-color: #EE1B2E;
+    border: 4px solid #ffded4;
+    cursor: pointer;
+}
+
+span {
+    font-size: 0.8em;
+    width: 400px;
+    padding: 0px;
+    margin: 4px 0;
+    display: block;
+    border: none;
+    border-radius: 4px;
+}
+
+.loggedin {
+    visibility: visible;
+}
+
+.loggedoff {
+    display: none;
+}
+
+.error {
+    color: #FF0000;
+}
+
+.wideImg {
+    width: 70vw;
+    max-width: 500px;
+    align-self: center;
+}
+
+.tallImg {
+    height: 60vw;
+    max-height: 700px;
+    align-self: center;
+}
