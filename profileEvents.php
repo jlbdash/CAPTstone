@@ -2,8 +2,8 @@
 
 // Server Connection
 $servername = "localhost";
-$username = "CST8257";
-$password = "cakeall";
+$username = "username";
+$password = "password";
 $dbname = "capt";
 
 // Finding Friends
