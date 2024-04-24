@@ -39,9 +39,9 @@ session_start();
                     <?php
                     if (!empty($_POST['email']) && !empty($_POST['pass'])) {
                         $servername = "localhost";
-                        $username = "CST8257";
-                        $password = "cakeall";
-                        $dbname = "CAPT";
+                        $username = "username";
+                        $password = "password";
+                        $dbname = "capt";
                         $conn = new mysqli($servername, $username, $password,
                                 $dbname);
 
