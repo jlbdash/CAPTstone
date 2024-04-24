@@ -42,8 +42,8 @@ session_start();
                         <?php
                         if ($_POST != Null) {
                             $servername = "localhost";
-                            $username = "CST8257";
-                            $password = "cakeall";
+                            $username = "username";
+                            $password = "password";
                             $dbname = "capt";
 
                             $conn = new mysqli($servername, $username,
