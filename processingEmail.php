@@ -17,8 +17,8 @@ if (test_input($q) === true) {
     } else {
 
         $servername = "localhost";
-        $username = "CST8257";
-        $password = "cakeall";
+        $username = "username";
+        $password = "password";
         $dbname = "capt";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
