@@ -1,0 +1,46 @@
+
+/* Footer */
+footer {
+    display: block;
+    align-self: end;
+}
+
+.setbottom{
+    position: relative;
+    color: #EE1B2E;
+    margin-top: 20px;
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0;
+    background-color: transparent;
+    color: #EE1B2E;
+    width: 95vw;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+
+.copyright {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 12px;
+    color: #F6967E;
+}
+
+/* Responsive layout - 800px*/
+@media screen and (max-width: 800px) {
+    footer {
+        width: auto;
+    }
+    .copyright {
+        justify-content: left;
+   }
+}
